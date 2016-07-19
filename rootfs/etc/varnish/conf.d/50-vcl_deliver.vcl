@@ -26,5 +26,7 @@ sub vcl_deliver {
   unset resp.http.Link;
   unset resp.http.X-Generator;
 
+  call debug_deliver;
+
   return (deliver);
 }

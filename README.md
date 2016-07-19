@@ -42,7 +42,13 @@ Another possibility is just give to the system a full VCL file. The needed param
 
 NOTE: As you may see in the examples the "web" name is resolved as localhost, usually you will provide your service name in the VCL. 
 
+### Basic header debugging
+
+If in your request you include the header: `X-Cache-Debug: u0AJAlRWN4` you can get extra headers in your response.
+You can change the default secret value using an environmental variable.
+
 ### Other supported parameters:
 
-`$CACHE_SIZE`:      Determines the cache size used by varnish
-`$VARNISHD_PARAMS`: Other parameters you want to pass to the varnish daemon
+`$CACHE_SIZE`:           Determines the cache size used by varnish
+`$VARNISHD_PARAMS`:      Other parameters you want to pass to the varnish daemon
+`$VARNISH_DEBUG_SECRET`: Change the default debug password

@@ -51,5 +51,8 @@ sub vcl_backend_response {
   # make Varnish keep all objects for 6 hours beyond their TTL
   set beresp.grace = 6h;
 
+  # We add debug call here
+  call debug_backend_response;
+
   return (deliver);
 }
