@@ -46,8 +46,8 @@ sub debug_deliver
         set resp.http.X-Cache-Backend-Sent-Host   = req.http.Host;
         set resp.http.X-Cache-Backend-Sent-Url    = req.url;
         set resp.http.X-Backend-Name              = req.backend_hint;
+        set resp.http.X-Backend-Requested-Version = req.http.Accept-Version;
         set resp.http.X-Client-IP                 = req.http.X-Client-IP;
-        set resp.http.X-Api-Requested-Version     = req.http.X-Api-Requested-Version;
     } else {
       # Remove some headers: PHP version
       unset resp.http.X-Powered-By;
@@ -59,6 +59,5 @@ sub debug_deliver
       unset resp.http.Via;
       unset resp.http.Link;
       unset resp.http.X-Generator;
-
     }
 }
