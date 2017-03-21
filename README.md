@@ -1,7 +1,6 @@
 # basi/varnish
 From the alpine distribution it installs a Varnish daemon.
 
-
 ### Varnish
 It allows you to use an specific VCL file when you provide an environment variable named: `$VCL_CONFIG`. But
 you can provide a directory instead of a file and the system internally will merge all the "vcl" files found in
@@ -40,7 +39,7 @@ Another possibility is just give to the system a full VCL file. The needed param
         -e VCL_CONFIG=/etc/varnish/default.vcl \
         basi/varnish
 
-NOTE: As you may see in the examples the "web" name is resolved as localhost, usually you will provide your service name in the VCL. 
+NOTE: As you may see in the examples the "web" name is resolved as localhost, usually you will provide your service name in the VCL.
 
 ### Basic header debugging
 
