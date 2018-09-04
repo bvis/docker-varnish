@@ -5,7 +5,7 @@ import std;
 import directors;
 
 backend server1 { # Define one backend
-  .host = "web";          # IP or Hostname of backend. Change it! By default it tries to connect to one container named "web"
+  .host = "www.softonic.com";          # IP or Hostname of backend. Change it! By default it tries to connect to one container named "web"
   .port = "80";           # Port Apache or whatever is listening
   .max_connections = 300; # That's it
 
