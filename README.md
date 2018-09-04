@@ -1,7 +1,7 @@
 [![](https://images.microbadger.com/badges/image/basi/varnish.svg)](http://microbadger.com/images/basi/varnish "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/basi/varnish.svg)](http://microbadger.com/images/basi/varnish "Get your own version badge on microbadger.com")
 
 # basi/varnish
-From the alpine distribution it installs a Varnish daemon.
+From the Debian Jessie distribution it installs a Varnish daemon.
 
 ### Varnish
 It allows you to use an specific VCL file when you provide an environment variable named: `$VCL_CONFIG`. But
